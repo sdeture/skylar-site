@@ -18,20 +18,96 @@ export default function Home() {
             Book a 30‑min call
           </a>
         </div>
-
-        {/* PORTRAIT */}
+        {/* PORTRAIT (flipped, full‑color) */}
         <div className="flex-shrink-0">
           <img
             src="/img/portrait.webp"
-            alt="Professional portrait of Skylar Deture"
-            className="w-64 rounded-2xl shadow-lg grayscale hover:grayscale-0 transition"
+            alt="Portrait of Skylar Deture"
+            className="w-64 rounded-2xl shadow-lg transform md:-scale-x-100"
             width={256}
             height={256}
           />
         </div>
       </section>
 
-      {/* …the rest of your sections remain unchanged … */}
+      {/* POSITIONING */}
+      <section className="w-full max-w-4xl px-6 py-12 space-y-4 text-left">
+        <h2 className="text-2xl font-bold">Why work with me?</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>General‑practitioner model – diagnose, prescribe, refer.</li>
+          <li>Tool‑agnostic recommendations – vendor‑neutral.</li>
+          <li>ROI first – clear cost, complexity, payback window.</li>
+        </ul>
+      </section>
+
+      {/* WORK‑IN‑PROGRESS LOG */}
+      <section className="w-full max-w-5xl px-6 py-12">
+        <h2 className="text-2xl font-bold mb-6">Work in Progress</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full text-left text-sm">
+            <thead className="border-b border-neutral-700">
+              <tr>
+                <th className="py-2 pr-4">Project</th>
+                <th className="py-2 pr-4">Current milestone</th>
+                <th className="py-2">Next artifact (ETA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-neutral-800">
+                <td className="py-2 pr-4">Generative‑AI for Aphasia</td>
+                <td className="py-2 pr-4">Survey draft complete</td>
+                <td className="py-2">Exec summary – 2 wks</td>
+              </tr>
+              <tr className="border-b border-neutral-800">
+                <td className="py-2 pr-4">AI‑Coding‑Tools guide</td>
+                <td className="py-2 pr-4">Outline ready</td>
+                <td className="py-2">Article – 10 d</td>
+              </tr>
+              <tr className="border-b border-neutral-800">
+                <td className="py-2 pr-4">Karen‑Horney chatbot</td>
+                <td className="py-2 pr-4">Spec written</td>
+                <td className="py-2">Demo – 3 wks</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4">Eupsychic‑LLM framework</td>
+                <td className="py-2 pr-4">Concept drafted</td>
+                <td className="py-2">Notebook – 1 mo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section
+        id="services"
+        className="w-full max-w-5xl px-6 py-20 grid md:grid-cols-3 gap-10"
+      >
+        <div className="bg-neutral-900 p-6 rounded-2xl shadow-lg">
+          <h3 className="text-xl font-bold mb-2">AI Opportunity Audit</h3>
+          <p className="text-sm mb-4">48‑hour diagnosis + ranked quick‑wins.</p>
+          <p className="font-semibold mb-4">$1 200</p>
+          <a href="mailto:skylar@example.com" className="underline text-indigo-400">
+            Schedule →
+          </a>
+        </div>
+        <div className="bg-neutral-900 p-6 rounded-2xl shadow-lg">
+          <h3 className="text-xl font-bold mb-2">Vendor Vetting Sprint</h3>
+          <p className="text-sm mb-4">1‑week deep dive on two platforms.</p>
+          <p className="font-semibold mb-4">$4 500</p>
+          <a href="mailto:skylar@example.com" className="underline text-indigo-400">
+            Schedule →
+          </a>
+        </div>
+        <div className="bg-neutral-900 p-6 rounded-2xl shadow-lg">
+          <h3 className="text-xl font-bold mb-2">Prompt & Process Tune‑Up</h3>
+          <p className="text-sm mb-4">90‑minute live workshop with cheat‑sheet.</p>
+          <p className="font-semibold mb-4">$900</p>
+          <a href="mailto:skylar@example.com" className="underline text-indigo-400">
+            Book →
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
