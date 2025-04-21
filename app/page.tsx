@@ -1,8 +1,20 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-neutral-50 flex flex-col items-center">
-      {/* HERO */}
-      <section className="w-full max-w-5xl px-6 py-24 flex flex-col md:flex-row items-center md:items-start gap-10">
+      {/* HERO with gradient fade */}
+      <section className="w-full max-w-5xl px-6 py-24 flex flex-col md:flex-row items-center md:items-start gap-10 bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
+        {/* PORTRAIT on the left — no flip */}
+        <div className="flex-shrink-0">
+          <img
+            src="/img/portrait.webp"
+            alt="Portrait of Skylar Deture"
+            className="w-64 rounded-2xl shadow-lg"
+            width={256}
+            height={256}
+          />
+        </div>
+
+        {/* HERO copy on the right */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-5xl font-extrabold tracking-tight">
             AI solutions, minus the overwhelm.
@@ -17,16 +29,6 @@ export default function Home() {
           >
             Book a 30‑min call
           </a>
-        </div>
-        {/* PORTRAIT (flipped, full‑color) */}
-        <div className="flex-shrink-0">
-          <img
-            src="/img/portrait.webp"
-            alt="Portrait of Skylar Deture"
-            className="w-64 rounded-2xl shadow-lg transform md:-scale-x-100"
-            width={256}
-            height={256}
-          />
         </div>
       </section>
 
